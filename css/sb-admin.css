@@ -7,6 +7,9 @@ html {
   position: relative;
   min-height: 100%; }
 
+  .bg-dark {
+    background-color: #267183 !important;
+  }
 body {
   overflow-x: hidden; }
 
