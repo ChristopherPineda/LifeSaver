@@ -62,7 +62,7 @@ var myLineChart = new Chart(ctx, {
       label: "Revenue",
       backgroundColor: "rgba(2,117,216,1)",
       borderColor: "rgba(2,117,216,1)",
-      data: [4215, 5312, 6251, 7841, 9821, 14984],
+      data: [2, 3, 1, 2, 1, 4],
     }],
   },
   options: {
@@ -81,7 +81,7 @@ var myLineChart = new Chart(ctx, {
       yAxes: [{
         ticks: {
           min: 0,
-          max: 15000,
+          max: 10,
           maxTicksLimit: 5
         },
         gridLines: {
@@ -99,9 +99,9 @@ var ctx = document.getElementById("myPieChart");
 var myPieChart = new Chart(ctx, {
   type: 'pie',
   data: {
-    labels: ["Blue", "Red", "Yellow", "Green"],
+    labels: ["Minor", "Death", "Class C", "Chemical"],
     datasets: [{
-      data: [12.21, 15.58, 11.25, 8.32],
+      data: [12, 0, 3, 2],
       backgroundColor: ['#007bff', '#dc3545', '#ffc107', '#28a745'],
     }],
   },
