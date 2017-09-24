@@ -37,7 +37,7 @@ var myLineChart = new Chart(ctx, {
     },{
       label: "Loss of Consciousness",
       lineTension: 0.3,
-      backgroundColor: "rgba(40,167,69,0.2)",
+      backgroundColor: "rgba(255,193,7,0.2)",
       borderColor: "rgba(255,193,7,1)",
       pointRadius: 5,
       pointBackgroundColor: "rgba(255,193,7,1)",
