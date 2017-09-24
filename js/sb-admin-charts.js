@@ -20,7 +20,7 @@ var myLineChart = new Chart(ctx, {
       pointHoverBackgroundColor: "rgba(2,117,216,1)",
       pointHitRadius: 20,
       pointBorderWidth: 2,
-      data: [10000, 30162, 26263, 18394, 18287, 28682, 31274, 33259, 25849, 24159, 32651, 31984, 38451],
+      data: [1, 0, 0, 3, 0, 0, 0, 0, 0, 0, 2, 0, 1],
     }],
   },
   options: {
@@ -39,7 +39,7 @@ var myLineChart = new Chart(ctx, {
       yAxes: [{
         ticks: {
           min: 0,
-          max: 40000,
+          max: 10,
           maxTicksLimit: 5
         },
         gridLines: {
@@ -99,7 +99,7 @@ var ctx = document.getElementById("myPieChart");
 var myPieChart = new Chart(ctx, {
   type: 'pie',
   data: {
-    labels: ["Minor", "Death", "Class C", "Chemical"],
+    labels: ["First Aid", "Death", "Loss of Consciousness", "Lost Time"],
     datasets: [{
       data: [12, 0, 3, 2],
       backgroundColor: ['#007bff', '#dc3545', '#ffc107', '#28a745'],
