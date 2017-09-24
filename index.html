@@ -16,6 +16,44 @@
   <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
   <!-- Custom styles for this template-->
   <link href="css/sb-admin.css" rel="stylesheet">
+
+  <style>
+  div.relative {
+      position: relative;
+      width: 1550px;
+      height: 600px;
+      border: 3px solid #000000;
+      background-image: url("BG_ZONE1550x600.png");
+  }
+  div.Zone1 {
+      position: absolute;
+      top: 84px;
+      left: 71px;
+      width: 400px;
+      height: 200px;
+      border: 1px solid #FFFFFF;
+      z-index: -1;
+  }
+  div.Zone2 {
+      position: absolute;
+      top: 63px;
+      left: 1061px;
+      width: 400px;
+      height: 200px;
+      border: 1px solid #FFFFFF;
+      z-index: -1;
+  }
+  div.Zone3 {
+      position: absolute;
+      top: 344px;
+      left: 543px;
+      width: 400px;
+      height: 200px;
+      border: 1px solid #FFFFFF;
+      z-index: -1;
+  }
+  </style>
+
 </head>
 
 <body class="fixed-nav sticky-footer bg-light" id="page-top">
@@ -182,7 +220,7 @@
             <a class="dropdown-item small" href="#">View all alerts</a>
           </div>
         </li>
-        
+
         <li class="nav-item">
           <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
             <i class="fa fa-fw fa-sign-out"></i>Logout</a>
@@ -274,7 +312,16 @@
                 <i class="fa fa-map-marker"></i> Workshop Map
             </div>
             <div class="card-body">
-                <canvas id="myworkshopmap" width="100%" height="30"></canvas>
+                <audio src="RedAlertTrim.mp3" id="alert"></audio>
+                <button onclick="Zone1Toggle()">Zone1</button>
+                <button onclick="Zone2Toggle()">Zone2</button>
+                <button onclick="Zone3Toggle()">Zone3</button>
+
+                <div class="relative">
+                  <div id="Zone1" class="Zone1"></div>
+                  <div id="Zone2" class="Zone2"></div>
+                  <div id="Zone3" class="Zone3"></div>
+                </div>
             </div>
             <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
         </div>
@@ -561,6 +608,39 @@
     <!-- Custom scripts for this page-->
     <script src="js/sb-admin-datatables.min.js"></script>
     <script src="js/sb-admin-charts.js"></script>
+    <script>
+    document.getElementById('Zone1').style.background = "yellow";
+    document.getElementById('Zone2').style.background = "yellow";
+    document.getElementById('Zone3').style.background = "yellow";
+
+    function Zone1Toggle(){
+      if (document.getElementById('Zone1').style.background == "yellow"){
+        document.getElementById('Zone1').style.background = "red";
+        document.getElementById('alert').play();
+      }
+      else {
+        document.getElementById('Zone1').style.background = "yellow";
+      }
+    }
+    function Zone2Toggle(){
+      if (document.getElementById('Zone2').style.background == "yellow"){
+        document.getElementById('Zone2').style.background = "red";
+        document.getElementById('alert').play();
+      }
+      else {
+        document.getElementById('Zone2').style.background = "yellow";
+      }
+    }
+    function Zone3Toggle(){
+      if (document.getElementById('Zone3').style.background == "yellow"){
+        document.getElementById('Zone3').style.background = "red";
+        document.getElementById('alert').play();
+      }
+      else {
+        document.getElementById('Zone3').style.background = "yellow";
+      }
+    }
+    </script>
   </div>
 </body>
 
