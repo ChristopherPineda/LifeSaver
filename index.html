@@ -21,38 +21,40 @@
   div.zoneHolder {
       position: relative;
       width: 100%;
+      height: 400px;
       border: 3px solid #000000;
       z-index: 5;
   }
   div.zoneBase {
-
+    position: relative;
       width: 100%;
+      height: 100%;
 
   }
   div.Zone1 {
       position: absolute;
-      top: 84px;
+      top: 34px;
       left: 71px;
-      width: 400px;
-      height: 200px;
+      width: 25%;
+      height: 25%;
       border: 1px solid #FFFFFF;
       z-index: -1;
   }
   div.Zone2 {
       position: absolute;
       top: 63px;
-      left: 1061px;
-      width: 400px;
-      height: 200px;
+      right: 80px;
+      width: 25%;
+      height: 25%;
       border: 1px solid #FFFFFF;
       z-index: -1;
   }
   div.Zone3 {
       position: absolute;
-      top: 344px;
-      left: 543px;
-      width: 400px;
-      height: 200px;
+      top: 244px;
+      left: 10px;
+      width: 25%;
+      height: 25%;
       border: 1px solid #FFFFFF;
       z-index: -1;
   }
@@ -104,37 +106,29 @@
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="LIFE (Life-Changing Injury and Fatality Elimination) Links">
           <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
             <i class="fa fa-fw fa-file"></i>
-            <span class="nav-link-text">Example Pages</span>
+            <span class="nav-link-text">Blank Reports</span>
           </a>
           <ul class="sidenav-second-level collapse" id="collapseExamplePages">
             <li>
-              <a href="login.html">Login Page</a>
+              <a href="#">Mishap Report</a>
             </li>
-            <li>
-              <a href="register.html">Registration Page</a>
-            </li>
-            <li>
-              <a href="forgot-password.html">Forgot Password Page</a>
-            </li>
-            <li>
-              <a href="blank.html">Blank Page</a>
-            </li>
+
           </ul>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
           <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
             <i class="fa fa-fw fa-sitemap"></i>
-            <span class="nav-link-text">Work Areas</span>
+            <span class="nav-link-text">L.I.F.E. Life-Changing Injury and Fatality Elimination) Links</span>
           </a>
           <ul class="sidenav-second-level collapse" id="collapseMulti">
             <li>
-              <a href="#">Second Level Item</a>
+              <a href="http://www.internationalpaper.com/apps/sustainabilityreport2013/manufacturing/life-program.html">IP's LIFE Program</a>
             </li>
             <li>
-              <a href="#">Second Level Item</a>
+              <a href="http://www.internationalpaper.com/apps/sustainabilityreport2013/manufacturing/employee-health-and-safet.html">Employee Health and Safety</a>
             </li>
             <li>
-              <a href="#">Second Level Item</a>
+              <a href="http://www.internationalpaper.com/apps/sustainabilityreport2013/about-our-company/letter-from-our-chairman-and-ceo.html">CEO Safety Policy</a>
             </li>
           </ul>
         </li>
@@ -322,11 +316,10 @@
                 <button onclick="Zone3Toggle()">Zone3</button>
 
                 <div class="zoneHolder img-responsive">
-                  <div id="Zone1" class="Zone1"></div>
-                  <div id="Zone2" class="Zone2"></div>
-                  <div id="Zone3" class="Zone3"></div>
-                  <div id="ZoneBase" class="ZoneBase"><img src="BG_ZONE1550x600.png" class="img-responsive"/></div
-                </div>
+                  <div id="Zone1" class="Zone1"><img src="Z1.png" style="width:100%; height:100%;"/></div>
+                  <div id="Zone2" class="Zone2"><img src="Z2.png" style="width:100%; height:100%;"/></div>
+                  <div id="Zone3" class="Zone3"><img src="Z3.png" style="width:100%; height:100%;"/></div>
+                    </div>
             </div>
             <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
         </div>
@@ -350,14 +343,14 @@
                   <canvas id="myBarChart" width="100" height="50"></canvas>
                 </div>
                 <div class="col-sm-4 text-center my-auto">
-                  <div class="h4 mb-0 text-primary">$34,693</div>
-                  <div class="small text-muted">YTD Revenue</div>
+                  <div class="h4 mb-0 text-primary">45</div>
+                  <div class="small text-muted">YTD Incidents</div>
                   <hr>
-                  <div class="h4 mb-0 text-warning">$18,474</div>
-                  <div class="small text-muted">YTD Expenses</div>
+                  <div class="h4 mb-0 text-warning">21</div>
+                  <div class="small text-muted">LST30 Incidents</div>
                   <hr>
-                  <div class="h4 mb-0 text-success">$16,219</div>
-                  <div class="small text-muted">YTD Margin</div>
+                  <div class="h4 mb-0 text-success">4</div>
+                  <div class="small text-muted">Plant Incidents</div>
                 </div>
               </div>
             </div>
@@ -389,8 +382,8 @@
                 <div class="media">
                   <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/45x45" alt="">
                   <div class="media-body">
-                    <strong>David Miller</strong>posted a new article to
-                    <strong>David Miller Website</strong>.
+                    <strong>David Miller</strong>posted a new
+                    <strong>Mishap Report</strong>.
                     <div class="text-muted smaller">Today at 5:43 PM - 5m ago</div>
                   </div>
                 </div>
@@ -399,7 +392,7 @@
                 <div class="media">
                   <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/45x45" alt="">
                   <div class="media-body">
-                    <strong>Samantha King</strong>sent you a new message!
+                    <strong>Samantha King</strong> sent you a new message!
                     <div class="text-muted smaller">Today at 4:37 PM - 1hr ago</div>
                   </div>
                 </div>
@@ -408,24 +401,13 @@
                 <div class="media">
                   <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/45x45" alt="">
                   <div class="media-body">
-                    <strong>Jeffery Wellings</strong>added a new photo to the album
-                    <strong>Beach</strong>.
+                    <strong>Jeffery Wellings</strong> added a new photo to the album
+                    <strong>Box_Press_Zone1_Hazards</strong>.
                     <div class="text-muted smaller">Today at 4:31 PM - 1hr ago</div>
                   </div>
                 </div>
               </a>
-              <a class="list-group-item list-group-item-action" href="#">
-                <div class="media">
-                  <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/45x45" alt="">
-                  <div class="media-body">
-                    <i class="fa fa-code-fork"></i>
-                    <strong>Monica Dennis</strong>forked the
-                    <strong>startbootstrap-sb-admin</strong>repository on
-                    <strong>GitHub</strong>.
-                    <div class="text-muted smaller">Today at 3:54 PM - 2hrs ago</div>
-                  </div>
-                </div>
-              </a>
+
               <a class="list-group-item list-group-item-action" href="#">View all activity...</a>
             </div>
             <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
@@ -446,20 +428,22 @@
                     <tr>
                         <th>Name</th>
                         <th>Position</th>
-                        <th>Office</th>
+                        <th>Plant</th>
                         <th>Age</th>
                         <th>Mishap date</th>
-                        <th>Salary</th>
+                        <th>Sub Category</th>
+                        <th>Report Link</th>
                     </tr>
                 </thead>
                 <tfoot>
                     <tr>
-                        <th>Name</th>
-                        <th>Position</th>
-                        <th>Office</th>
-                        <th>Age</th>
-                        <th>Start date</th>
-                        <th>Salary</th>
+                      <th>Name</th>
+                      <th>Position</th>
+                      <th>Plant</th>
+                      <th>Age</th>
+                      <th>Mishap date</th>
+                      <th>Sub Category</th>
+                      <th>Report Link</th>
                     </tr>
                 </tfoot>
                 <tbody>
@@ -469,7 +453,8 @@
                         <td>Edinburgh</td>
                         <td>61</td>
                         <td>2011/04/25</td>
-                        <td>$320,800</td>
+                        <td>Driver Safety</td>
+                        <td><i class="fa fa-medkit fa-medkit"></i></td>
                     </tr>
                     <tr>
                         <td>Garrett Winters</td>
@@ -477,7 +462,8 @@
                         <td>Tokyo</td>
                         <td>63</td>
                         <td>2011/07/25</td>
-                        <td>$170,750</td>
+                        <td>Exposure</td>
+                        <td><i class="fa fa-medkit fa-medkit"></i></td>
                     </tr>
                     <tr>
                         <td>Ashton Cox</td>
@@ -485,7 +471,8 @@
                         <td>San Francisco</td>
                         <td>66</td>
                         <td>2009/01/12</td>
-                        <td>$86,000</td>
+                        <td>Fall</td>
+                        <td><i class="fa fa-medkit fa-medkit"></i></td>
                     </tr>
                     <tr>
                         <td>Cedric Kelly</td>
@@ -493,7 +480,8 @@
                         <td>Edinburgh</td>
                         <td>22</td>
                         <td>2012/03/29</td>
-                        <td>$433,060</td>
+                        <td>Fall</td>
+                        <td><i class="fa fa-medkit fa-medkit"></i></td>
                     </tr>
                     <tr>
                         <td>Airi Satou</td>
@@ -501,7 +489,8 @@
                         <td>Tokyo</td>
                         <td>33</td>
                         <td>2008/11/28</td>
-                        <td>$162,700</td>
+                        <td>Machine</td>
+                        <td><i class="fa fa-medkit fa-medkit"></i></td>
                     </tr>
                     <tr>
                         <td>Brielle Williamson</td>
@@ -509,7 +498,8 @@
                         <td>New York</td>
                         <td>61</td>
                         <td>2012/12/02</td>
-                        <td>$372,000</td>
+                        <td>Motorized Equipment</td>
+                        <td><i class="fa fa-medkit fa-medkit"></i></td>
                     </tr>
                     <tr>
                         <td>Herrod Chandler</td>
@@ -517,7 +507,8 @@
                         <td>San Francisco</td>
                         <td>59</td>
                         <td>2012/08/06</td>
-                        <td>$137,500</td>
+                        <td>Exposure</td>
+                        <td><i class="fa fa-medkit fa-medkit"></i></td>
                     </tr>
                     <tr>
                         <td>Rhona Davidson</td>
@@ -525,7 +516,8 @@
                         <td>Tokyo</td>
                         <td>55</td>
                         <td>2010/10/14</td>
-                        <td>$327,900</td>
+                        <td>Driver Safety</td>
+                        <td><i class="fa fa-medkit fa-medkit"></i></td>
                     </tr>
                     <tr>
                         <td>Sonya Frost</td>
@@ -533,7 +525,8 @@
                         <td>Edinburgh</td>
                         <td>23</td>
                         <td>2008/12/13</td>
-                        <td>$103,600</td>
+                        <td>Driver Safety</td>
+                        <td><i class="fa fa-medkit fa-medkit"></i></td>
                     </tr>
                     <tr>
                         <td>Jena Gaines</td>
@@ -541,7 +534,8 @@
                         <td>London</td>
                         <td>30</td>
                         <td>2008/12/19</td>
-                        <td>$90,560</td>
+                        <td>Driver Safety</td>
+                        <td><i class="fa fa-medkit fa-medkit"></i></td>
                     </tr>
                     <tr>
                         <td>Quinn Flynn</td>
@@ -549,7 +543,8 @@
                         <td>Edinburgh</td>
                         <td>22</td>
                         <td>2013/03/03</td>
-                        <td>$342,000</td>
+                        <td>Exposure</td>
+                        <td><i class="fa fa-medkit fa-medkit"></i></td>
                     </tr>
                     <tr>
                         <td>Donna Snider</td>
@@ -557,7 +552,8 @@
                         <td>New York</td>
                         <td>27</td>
                         <td>2011/01/25</td>
-                        <td>$112,000</td>
+                        <td>Machine</td>
+                        <td><i class="fa fa-medkit fa-medkit"></i></td>
                     </tr>
                 </tbody>
             </table>
