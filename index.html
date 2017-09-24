@@ -20,10 +20,11 @@
   <style>
   div.zoneHolder {
       position: relative;
-      width: 1550px;
+      width: 850px;
       height: 600px;
       border: 3px solid #000000;
       background-image: url("BG_ZONE1550x600.png");
+      z-index: 5;
   }
   div.Zone1 {
       position: absolute;
@@ -321,6 +322,7 @@
                   <div id="Zone1" class="Zone1"></div>
                   <div id="Zone2" class="Zone2"></div>
                   <div id="Zone3" class="Zone3"></div>
+                  <div id="ZoneBase" class="ZoneBase"><img src="BG_ZONE1550x600.png"/></div
                 </div>
             </div>
             <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
@@ -610,8 +612,11 @@
     <script src="js/sb-admin-charts.js"></script>
     <script>
     document.getElementById('Zone1').style.background = "yellow";
+    document.getElementById('Zone1').style.opacity = "0.5";
     document.getElementById('Zone2').style.background = "yellow";
+    document.getElementById('Zone2').style.opacity = "0.5";
     document.getElementById('Zone3').style.background = "yellow";
+    document.getElementById('Zone3').style.opacity = "0.5";
 
     function Zone1Toggle(){
       if (document.getElementById('Zone1').style.background == "yellow"){
