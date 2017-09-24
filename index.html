@@ -20,11 +20,14 @@
   <style>
   div.zoneHolder {
       position: relative;
-      width: 850px;
-      height: 600px;
+      width: 100%;
       border: 3px solid #000000;
-      background-image: url("BG_ZONE1550x600.png");
       z-index: 5;
+  }
+  div.zoneBase {
+
+      width: 100%;
+
   }
   div.Zone1 {
       position: absolute;
@@ -318,11 +321,11 @@
                 <button onclick="Zone2Toggle()">Zone2</button>
                 <button onclick="Zone3Toggle()">Zone3</button>
 
-                <div class="zoneHolder">
+                <div class="zoneHolder img-responsive">
                   <div id="Zone1" class="Zone1"></div>
                   <div id="Zone2" class="Zone2"></div>
                   <div id="Zone3" class="Zone3"></div>
-                  <div id="ZoneBase" class="ZoneBase"><img src="BG_ZONE1550x600.png"/></div
+                  <div id="ZoneBase" class="ZoneBase"><img src="BG_ZONE1550x600.png" class="img-responsive"/></div
                 </div>
             </div>
             <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
